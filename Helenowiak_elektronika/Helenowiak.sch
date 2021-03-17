@@ -1,0 +1,540 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 3500 5450 0    50   Input ~ 0
++7.4V
+Text GLabel 3500 5550 0    50   Input ~ 0
+GND
+Text GLabel 2950 4750 0    50   Input ~ 0
++3.3V
+Text GLabel 3500 4850 0    50   Input ~ 0
+GND
+Text GLabel 4250 5550 2    50   Input ~ 0
+GND
+Wire Wire Line
+	4450 4850 4450 5450
+Wire Wire Line
+	4250 5050 4300 5050
+Wire Wire Line
+	4300 5050 4300 5100
+Wire Wire Line
+	4300 5250 4250 5250
+Wire Wire Line
+	4400 4950 4400 5300
+Wire Wire Line
+	3500 5150 3350 5150
+Wire Wire Line
+	3350 5150 3350 5250
+Wire Wire Line
+	3350 5250 3500 5250
+Wire Wire Line
+	3500 5350 3300 5350
+Wire Wire Line
+	3300 5050 3500 5050
+Wire Wire Line
+	3500 4950 3150 4950
+Wire Wire Line
+	3150 4750 4500 4750
+Wire Wire Line
+	4500 4750 4500 5150
+Wire Wire Line
+	2950 4750 3150 4750
+Text GLabel 4800 5100 2    50   Input ~ 0
+L_IN1
+Wire Wire Line
+	4300 5100 4800 5100
+Connection ~ 4300 5100
+Text GLabel 4800 5300 2    50   Input ~ 0
+L_IN2
+Wire Wire Line
+	4800 5300 4400 5300
+Connection ~ 4400 5300
+Wire Wire Line
+	4400 5300 4400 5350
+Text GLabel 4800 5450 2    50   Input ~ 0
+L_PWM
+Wire Wire Line
+	4450 5450 4800 5450
+Connection ~ 4450 5450
+Text GLabel 3900 3400 0    50   Input ~ 0
++5.0V
+$Comp
+L Device:R R?
+U 1 1 604BBF71
+P 4850 3600
+F 0 "R?" H 4920 3646 50  0000 L CNN
+F 1 "20k" H 4920 3555 50  0000 L CNN
+F 2 "" V 4780 3600 50  0001 C CNN
+F 3 "~" H 4850 3600 50  0001 C CNN
+	1    4850 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3800 4750 3800
+Wire Wire Line
+	3900 3400 4150 3400
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 604D126C
+P 1750 1500
+F 0 "J?" H 1778 1476 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 1778 1385 50  0000 L CNN
+F 2 "" H 1750 1500 50  0001 C CNN
+F 3 "~" H 1750 1500 50  0001 C CNN
+	1    1750 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 604D5224
+P 2300 1500
+F 0 "C?" H 2415 1546 50  0000 L CNN
+F 1 "0.33uF" H 2415 1455 50  0000 L CNN
+F 2 "" H 2338 1350 50  0001 C CNN
+F 3 "~" H 2300 1500 50  0001 C CNN
+	1    2300 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 604D6D1F
+P 3350 1500
+F 0 "C?" H 3465 1546 50  0000 L CNN
+F 1 "0.33uF" H 3465 1455 50  0000 L CNN
+F 2 "" H 3388 1350 50  0001 C CNN
+F 3 "~" H 3350 1500 50  0001 C CNN
+	1    3350 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 1500 1950 1650
+Wire Wire Line
+	1950 1400 1950 1350
+Text GLabel 3550 1150 2    50   Input ~ 0
++5.0V
+Wire Wire Line
+	3350 1350 3350 1150
+Wire Wire Line
+	3350 1150 3550 1150
+Connection ~ 3350 1350
+Text GLabel 4900 4150 2    50   Input ~ 0
+GND
+$Comp
+L Sensor_Proximity:CNY70 U?
+U 1 1 604A7DBF
+P 4450 3900
+F 0 "U?" H 4450 4217 50  0000 C CNN
+F 1 "CNY70" H 4450 4126 50  0000 C CNN
+F 2 "OptoDevice:Vishay_CNY70" H 4450 3700 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/83751/cny70.pdf" H 4450 4000 50  0001 C CNN
+	1    4450 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 4000 4150 4150
+Wire Wire Line
+	4150 4150 4750 4150
+Wire Wire Line
+	4750 4000 4750 4150
+Connection ~ 4750 4150
+Wire Wire Line
+	4750 4150 4900 4150
+$Comp
+L power:GND #PWR?
+U 1 1 60501853
+P 1950 1800
+F 0 "#PWR?" H 1950 1550 50  0001 C CNN
+F 1 "GND" H 1955 1627 50  0000 C CNN
+F 2 "" H 1950 1800 50  0001 C CNN
+F 3 "" H 1950 1800 50  0001 C CNN
+	1    1950 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 1800 1950 1650
+Connection ~ 1950 1650
+$Comp
+L Regulator_Linear:LD1117S33TR_SOT223 U?
+U 1 1 60505D10
+P 4550 1350
+F 0 "U?" H 4550 1592 50  0000 C CNN
+F 1 "LD1117S33TR_SOT223" H 4550 1501 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 4550 1550 50  0001 C CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 4650 1100 50  0001 C CNN
+	1    4550 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 1350 4000 1350
+Wire Wire Line
+	3350 1650 4000 1650
+Connection ~ 3350 1650
+Text GLabel 5500 1350 2    50   Input ~ 0
++3.3V
+$Comp
+L Device:C C?
+U 1 1 6050FAF6
+P 4000 1500
+F 0 "C?" H 4115 1546 50  0000 L CNN
+F 1 "100nF" H 4115 1455 50  0000 L CNN
+F 2 "" H 4038 1350 50  0001 C CNN
+F 3 "~" H 4000 1500 50  0001 C CNN
+	1    4000 1500
+	1    0    0    -1  
+$EndComp
+Connection ~ 4000 1350
+Wire Wire Line
+	4000 1350 4250 1350
+Connection ~ 4000 1650
+Wire Wire Line
+	4000 1650 4550 1650
+$Comp
+L Device:C C?
+U 1 1 60514D95
+P 5050 1500
+F 0 "C?" H 5165 1546 50  0000 L CNN
+F 1 "10uF" H 5165 1455 50  0000 L CNN
+F 2 "" H 5088 1350 50  0001 C CNN
+F 3 "~" H 5050 1500 50  0001 C CNN
+	1    5050 1500
+	1    0    0    -1  
+$EndComp
+Connection ~ 4550 1650
+Text GLabel 5550 1650 2    50   Input ~ 0
+GND
+Text GLabel 2300 3100 0    50   Input ~ 0
++3.3V
+Text GLabel 2300 3000 0    50   Input ~ 0
+GND
+Text GLabel 4000 2700 0    50   Input ~ 0
+GND
+$Comp
+L HelenowiakLib:BT05 B?
+U 1 1 6054E994
+P 2450 2900
+F 0 "B?" H 2728 2921 50  0000 L CNN
+F 1 "BT05" H 2728 2830 50  0000 L CNN
+F 2 "" H 2400 2600 50  0001 C CNN
+F 3 "" H 2400 2600 50  0001 C CNN
+	1    2450 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 5450 4250 5450
+Wire Wire Line
+	4400 5350 4250 5350
+Wire Wire Line
+	4500 5150 4250 5150
+Wire Wire Line
+	4250 4950 4400 4950
+Wire Wire Line
+	4250 4850 4450 4850
+Wire Wire Line
+	4300 5100 4300 5250
+$Comp
+L HelenowiakLib:TB6612FNG H?
+U 1 1 6054F77A
+P 3850 5200
+F 0 "H?" H 3875 5775 50  0000 C CNN
+F 1 "TB6612FNG" H 3875 5684 50  0000 C CNN
+F 2 "" H 4050 5650 50  0001 C CNN
+F 3 "" H 4050 5650 50  0001 C CNN
+	1    3850 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L HelenowiakLib:CzujnikOdleglosci_Polulu2578 CO?
+U 1 1 6055C9E9
+P 4300 2550
+F 0 "CO?" H 4478 2601 50  0000 L CNN
+F 1 "Czujnik_Polulu2578" H 4478 2510 50  0000 L CNN
+F 2 "" H 4050 2500 50  0001 C CNN
+F 3 "" H 4050 2500 50  0001 C CNN
+	1    4300 2550
+	1    0    0    -1  
+$EndComp
+Text GLabel 4000 2600 0    50   Input ~ 0
++5.0V
+Text Notes 3400 850  0    50   ~ 0
+Zasilanie\n
+Text Notes 4050 2200 0    50   ~ 0
+Czujnik odleglosci\n
+Text Notes 4150 3100 0    50   ~ 0
+Detektor bieli
+Text Notes 2400 2400 0    50   ~ 0
+Bluetooth
+Text GLabel 2350 5200 2    50   Input ~ 0
++5.0V
+Text GLabel 2350 4900 2    50   Input ~ 0
+GND
+Text GLabel 2350 5100 2    50   Input ~ 0
+OUTA_EnkoderL
+Text GLabel 2350 5000 2    50   Input ~ 0
+OUTB_EnkoderL
+$Comp
+L Connector:Conn_01x06_Female J?
+U 1 1 605AE894
+P 2150 5200
+F 0 "J?" H 2042 4675 50  0000 C CNN
+F 1 "EnkoderL" H 2042 4766 50  0000 C CNN
+F 2 "" H 2150 5200 50  0001 C CNN
+F 3 "~" H 2150 5200 50  0001 C CNN
+	1    2150 5200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3300 5050 3300 5350
+Wire Wire Line
+	2350 5300 3100 5300
+Wire Wire Line
+	3100 5300 3100 5050
+Wire Wire Line
+	3100 5050 3300 5050
+Connection ~ 3300 5050
+Wire Wire Line
+	3350 5250 3200 5250
+Wire Wire Line
+	3200 5250 3200 5400
+Wire Wire Line
+	3200 5400 2350 5400
+Connection ~ 3350 5250
+$Comp
+L Helenowiak-rescue:Motor_DC-Motor M?
+U 1 1 605CE9C3
+P 1150 5100
+F 0 "M?" H 1308 5096 50  0000 L CNN
+F 1 "MotorL" H 1308 5005 50  0000 L CNN
+F 2 "" H 1150 5010 50  0001 C CNN
+F 3 "" H 1150 5010 50  0001 C CNN
+	1    1150 5100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1150 4900
+NoConn ~ 1150 5400
+Connection ~ 3150 4750
+Wire Wire Line
+	3150 4750 3150 4950
+Text GLabel 3450 6750 0    50   Input ~ 0
++7.4V
+Text GLabel 3450 6850 0    50   Input ~ 0
+GND
+Text GLabel 2900 6050 0    50   Input ~ 0
++3.3V
+Text GLabel 3450 6150 0    50   Input ~ 0
+GND
+Text GLabel 4200 6850 2    50   Input ~ 0
+GND
+Wire Wire Line
+	4400 6150 4400 6750
+Wire Wire Line
+	4200 6350 4250 6350
+Wire Wire Line
+	4250 6350 4250 6400
+Wire Wire Line
+	4250 6550 4200 6550
+Wire Wire Line
+	4350 6250 4350 6600
+Wire Wire Line
+	3450 6450 3300 6450
+Wire Wire Line
+	3300 6450 3300 6550
+Wire Wire Line
+	3300 6550 3450 6550
+Wire Wire Line
+	3450 6650 3250 6650
+Wire Wire Line
+	3250 6350 3450 6350
+Wire Wire Line
+	3450 6250 3100 6250
+Wire Wire Line
+	3100 6050 4450 6050
+Wire Wire Line
+	4450 6050 4450 6450
+Wire Wire Line
+	2900 6050 3100 6050
+Text GLabel 4750 6400 2    50   Input ~ 0
+R_IN1
+Wire Wire Line
+	4250 6400 4750 6400
+Connection ~ 4250 6400
+Text GLabel 4750 6600 2    50   Input ~ 0
+R_IN2
+Wire Wire Line
+	4750 6600 4350 6600
+Connection ~ 4350 6600
+Wire Wire Line
+	4350 6600 4350 6650
+Text GLabel 4750 6750 2    50   Input ~ 0
+R_PWM
+Wire Wire Line
+	4400 6750 4750 6750
+Connection ~ 4400 6750
+Wire Wire Line
+	4400 6750 4200 6750
+Wire Wire Line
+	4350 6650 4200 6650
+Wire Wire Line
+	4450 6450 4200 6450
+Wire Wire Line
+	4200 6250 4350 6250
+Wire Wire Line
+	4200 6150 4400 6150
+Wire Wire Line
+	4250 6400 4250 6550
+$Comp
+L HelenowiakLib:TB6612FNG H?
+U 1 1 605EC83D
+P 3800 6500
+F 0 "H?" H 3825 7075 50  0000 C CNN
+F 1 "TB6612FNG" H 3825 6984 50  0000 C CNN
+F 2 "" H 4000 6950 50  0001 C CNN
+F 3 "" H 4000 6950 50  0001 C CNN
+	1    3800 6500
+	1    0    0    -1  
+$EndComp
+Text GLabel 2300 6500 2    50   Input ~ 0
++5.0V
+Text GLabel 2300 6200 2    50   Input ~ 0
+GND
+Text GLabel 2300 6400 2    50   Input ~ 0
+OUTA_EnkoderR
+Text GLabel 2300 6300 2    50   Input ~ 0
+OUTB_EnkoderR
+$Comp
+L Connector:Conn_01x06_Female J?
+U 1 1 605EC847
+P 2100 6500
+F 0 "J?" H 1992 5975 50  0000 C CNN
+F 1 "EnkoderR" H 1992 6066 50  0000 C CNN
+F 2 "" H 2100 6500 50  0001 C CNN
+F 3 "~" H 2100 6500 50  0001 C CNN
+	1    2100 6500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3250 6350 3250 6650
+Wire Wire Line
+	2300 6600 3050 6600
+Wire Wire Line
+	3050 6600 3050 6350
+Wire Wire Line
+	3050 6350 3250 6350
+Connection ~ 3250 6350
+Wire Wire Line
+	3300 6550 3150 6550
+Wire Wire Line
+	3150 6550 3150 6700
+Wire Wire Line
+	3150 6700 2300 6700
+Connection ~ 3300 6550
+$Comp
+L Helenowiak-rescue:Motor_DC-Motor M?
+U 1 1 605EC856
+P 1100 6400
+F 0 "M?" H 1258 6396 50  0000 L CNN
+F 1 "MotorR" H 1258 6305 50  0000 L CNN
+F 2 "" H 1100 6310 50  0001 C CNN
+F 3 "" H 1100 6310 50  0001 C CNN
+	1    1100 6400
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1100 6200
+NoConn ~ 1100 6700
+Connection ~ 3100 6050
+Wire Wire Line
+	3100 6050 3100 6250
+Text GLabel 2200 1150 2    50   Input ~ 0
++7.4V
+Wire Wire Line
+	2200 1150 1950 1150
+Wire Wire Line
+	1950 1150 1950 1350
+Connection ~ 1950 1350
+$Comp
+L Device:R R?
+U 1 1 604BB1C2
+P 4150 3600
+F 0 "R?" V 3943 3600 50  0000 C CNN
+F 1 "200R" V 4034 3600 50  0000 C CNN
+F 2 "" V 4080 3600 50  0001 C CNN
+F 3 "~" H 4150 3600 50  0001 C CNN
+	1    4150 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 3800 4150 3750
+Wire Wire Line
+	4850 3800 4850 3750
+Wire Wire Line
+	4150 3450 4150 3400
+Wire Wire Line
+	4150 3400 4850 3400
+Wire Wire Line
+	4850 3400 4850 3450
+Connection ~ 4150 3400
+Connection ~ 5050 1350
+Wire Wire Line
+	5050 1350 5500 1350
+Connection ~ 5050 1650
+Wire Wire Line
+	5050 1650 5550 1650
+Wire Wire Line
+	4850 1350 5050 1350
+Wire Wire Line
+	4550 1650 5050 1650
+Text GLabel 2300 2800 0    50   Input ~ 0
+BT_RX
+Text GLabel 2300 2900 0    50   Input ~ 0
+BT_TX
+NoConn ~ 2300 2700
+NoConn ~ 2300 3200
+Wire Wire Line
+	3200 1350 3350 1350
+$Comp
+L Regulator_Linear:LM1117-5.0 U?
+U 1 1 604A7886
+P 3150 1950
+F 0 "U?" H 3150 2192 50  0000 C CNN
+F 1 "LM1117-5.0" H 3150 2101 50  0000 C CNN
+F 2 "" H 3150 1950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 3150 1950 50  0001 C CNN
+	1    3150 1950
+	1    0    0    -1  
+$EndComp
+Connection ~ 2900 1650
+Wire Wire Line
+	3350 1650 2900 1650
+$Comp
+L Regulator_Linear:L7805 U?
+U 1 1 604CAF11
+P 2900 1350
+F 0 "U?" H 2900 1592 50  0000 C CNN
+F 1 "L7805" H 2900 1501 50  0000 C CNN
+F 2 "" H 2925 1200 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 2900 1300 50  0001 C CNN
+	1    2900 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 1350 2300 1350
+Wire Wire Line
+	1950 1650 2300 1650
+Connection ~ 2300 1350
+Connection ~ 2300 1650
+Wire Wire Line
+	2300 1350 2600 1350
+Wire Wire Line
+	2300 1650 2900 1650
+$EndSCHEMATC

@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name HelenowiakLib)(type Legacy)(uri ${KIPRJMOD}/HelenowiakLib.lib)(options "")(descr ""))
+  (lib (name Helenowiak-rescue)(type Legacy)(uri ${KIPRJMOD}/Helenowiak-rescue.lib)(options "")(descr ""))
+)
