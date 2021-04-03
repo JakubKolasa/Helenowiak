@@ -1137,4 +1137,15 @@ Text GLabel 6450 4050 0    50   Input ~ 0
 CB_out2
 Text GLabel 6450 4150 0    50   Input ~ 0
 CB_out3
+$Comp
+L Device:R_POT RV?
+U 1 1 60628E41
+P 2300 7100
+F 0 "RV?" H 2231 7146 50  0000 R CNN
+F 1 "R_POT" H 2231 7055 50  0000 R CNN
+F 2 "" H 2300 7100 50  0001 C CNN
+F 3 "~" H 2300 7100 50  0001 C CNN
+	1    2300 7100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

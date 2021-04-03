@@ -4,10 +4,8 @@ BT_RX -bluetooth
 BT_TX
 CO_enb1 -wyjście, sygnał logiczny
 CO_enb2
-CO_enb3
 CO_out1	-wejscie, sygnał logiczny
 CO_out2
-CO_out3
 L_IN1 -wyjście, sygnał logiczny
 L_IN2
 R_IN1
@@ -20,7 +18,6 @@ OUTB_EnkoderR
 OUTB_EnkoderR
 CB_out1	-wejscie, sygnał logiczny
 CB_out2
-CB_out3
 
 czy zasilanie enkoderów moze byc prosto z zasilania?
 czy kondensatory są git?

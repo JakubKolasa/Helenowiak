@@ -66,23 +66,6 @@ L_PWM
 Wire Wire Line
 	4450 4500 4800 4500
 Connection ~ 4450 4500
-Text GLabel 900  6700 0    50   Input ~ 0
-+5.0V
-$Comp
-L Device:R R?
-U 1 1 604BBF71
-P 1850 6900
-F 0 "R?" H 1920 6946 50  0000 L CNN
-F 1 "20k" H 1920 6855 50  0000 L CNN
-F 2 "" V 1780 6900 50  0001 C CNN
-F 3 "~" H 1850 6900 50  0001 C CNN
-	1    1850 6900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1850 7100 1750 7100
-Wire Wire Line
-	900  6700 1150 6700
 $Comp
 L Connector:Conn_01x02_Female J?
 U 1 1 604D126C
@@ -111,28 +94,8 @@ Text GLabel 3400 1200 2    50   Input ~ 0
 +5.0V
 Wire Wire Line
 	3350 1400 3350 1200
-Text GLabel 1900 7450 2    50   Input ~ 0
+Text GLabel 2300 7450 2    50   Input ~ 0
 GND
-$Comp
-L Sensor_Proximity:CNY70 U?
-U 1 1 604A7DBF
-P 1450 7200
-F 0 "U?" H 1450 7517 50  0000 C CNN
-F 1 "CNY70" H 1450 7426 50  0000 C CNN
-F 2 "OptoDevice:Vishay_CNY70" H 1450 7000 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/83751/cny70.pdf" H 1450 7300 50  0001 C CNN
-	1    1450 7200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1150 7300 1150 7450
-Wire Wire Line
-	1150 7450 1750 7450
-Wire Wire Line
-	1750 7300 1750 7450
-Connection ~ 1750 7450
-Wire Wire Line
-	1750 7450 1900 7450
 $Comp
 L power:GND #PWR?
 U 1 1 60501853
@@ -186,7 +149,7 @@ Text GLabel 1000 3100 0    50   Input ~ 0
 +3.3V
 Text GLabel 1000 3000 0    50   Input ~ 0
 GND
-Text GLabel 2250 2700 0    50   Input ~ 0
+Text GLabel 2400 2950 0    50   Input ~ 0
 GND
 $Comp
 L HelenowiakLib:BT05 B?
@@ -225,15 +188,15 @@ $EndComp
 $Comp
 L HelenowiakLib:CzujnikOdleglosci_Polulu2578 CO?
 U 1 1 6055C9E9
-P 2550 2550
-F 0 "CO?" H 2728 2601 50  0000 L CNN
-F 1 "Czujnik_Polulu2578" H 2728 2510 50  0000 L CNN
-F 2 "" H 2300 2500 50  0001 C CNN
-F 3 "" H 2300 2500 50  0001 C CNN
-	1    2550 2550
+P 2700 2800
+F 0 "CO?" H 2878 2851 50  0000 L CNN
+F 1 "Czujnik_Polulu2578" H 2878 2760 50  0000 L CNN
+F 2 "" H 2450 2750 50  0001 C CNN
+F 3 "" H 2450 2750 50  0001 C CNN
+	1    2700 2800
 	1    0    0    -1  
 $EndComp
-Text GLabel 2250 2600 0    50   Input ~ 0
+Text GLabel 2400 2850 0    50   Input ~ 0
 +5.0V
 Text Notes 600  700  0    50   ~ 10
 Zasilanie\n
@@ -426,28 +389,6 @@ Wire Wire Line
 Wire Wire Line
 	1600 1200 1600 1400
 Connection ~ 1600 1400
-$Comp
-L Device:R R?
-U 1 1 604BB1C2
-P 1150 6900
-F 0 "R?" V 943 6900 50  0000 C CNN
-F 1 "200R" V 1034 6900 50  0000 C CNN
-F 2 "" V 1080 6900 50  0001 C CNN
-F 3 "~" H 1150 6900 50  0001 C CNN
-	1    1150 6900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1150 7100 1150 7050
-Wire Wire Line
-	1850 7100 1850 7050
-Wire Wire Line
-	1150 6750 1150 6700
-Wire Wire Line
-	1150 6700 1850 6700
-Wire Wire Line
-	1850 6700 1850 6750
-Connection ~ 1150 6700
 Connection ~ 4700 1400
 Wire Wire Line
 	4700 1400 5150 1400
@@ -520,35 +461,20 @@ Wire Notes Line
 	550  2100 5500 2100
 Text Notes 600  2250 0    50   ~ 10
 Bluetooth
-Text GLabel 4100 2700 0    50   Input ~ 0
+Text GLabel 4250 2950 0    50   Input ~ 0
 GND
 $Comp
 L HelenowiakLib:CzujnikOdleglosci_Polulu2578 CO?
 U 1 1 605979D7
-P 4400 2550
-F 0 "CO?" H 4578 2601 50  0000 L CNN
-F 1 "Czujnik_Polulu2578" H 4578 2510 50  0000 L CNN
-F 2 "" H 4150 2500 50  0001 C CNN
-F 3 "" H 4150 2500 50  0001 C CNN
-	1    4400 2550
+P 4550 2800
+F 0 "CO?" H 4728 2851 50  0000 L CNN
+F 1 "Czujnik_Polulu2578" H 4728 2760 50  0000 L CNN
+F 2 "" H 4300 2750 50  0001 C CNN
+F 3 "" H 4300 2750 50  0001 C CNN
+	1    4550 2800
 	1    0    0    -1  
 $EndComp
-Text GLabel 4100 2600 0    50   Input ~ 0
-+5.0V
-Text GLabel 3150 3250 0    50   Input ~ 0
-GND
-$Comp
-L HelenowiakLib:CzujnikOdleglosci_Polulu2578 CO?
-U 1 1 6059B0F6
-P 3450 3100
-F 0 "CO?" H 3628 3151 50  0000 L CNN
-F 1 "Czujnik_Polulu2578" H 3628 3060 50  0000 L CNN
-F 2 "" H 3200 3050 50  0001 C CNN
-F 3 "" H 3200 3050 50  0001 C CNN
-	1    3450 3100
-	1    0    0    -1  
-$EndComp
-Text GLabel 3150 3150 0    50   Input ~ 0
+Text GLabel 4250 2850 0    50   Input ~ 0
 +5.0V
 Wire Notes Line
 	5500 2250 5500 3350
@@ -568,155 +494,80 @@ Wire Notes Line
 	550  3500 5500 3500
 Text Notes 600  3500 0    50   ~ 10
 Mosteki H / silniki / enkodery
-Text GLabel 2250 2500 0    50   Input ~ 0
+Text GLabel 2400 2750 0    50   Input ~ 0
 CO_out1
-Text GLabel 4100 2500 0    50   Input ~ 0
+Text GLabel 4250 2750 0    50   Input ~ 0
 CO_out2
-Text GLabel 3150 3050 0    50   Input ~ 0
-CO_out3
-Text GLabel 2250 2400 0    50   Input ~ 0
+Text GLabel 2400 2650 0    50   Input ~ 0
 CO_enb1
-Text GLabel 4100 2400 0    50   Input ~ 0
+Text GLabel 4250 2650 0    50   Input ~ 0
 CO_enb2
-Text GLabel 3150 2950 0    50   Input ~ 0
-CO_enb3
-Text GLabel 2050 6700 2    50   Input ~ 0
-CB_out1
-Wire Wire Line
-	1850 6700 2050 6700
-Connection ~ 1850 6700
-Text GLabel 2750 6700 0    50   Input ~ 0
+Text GLabel 3700 6700 0    50   Input ~ 0
 +5.0V
 $Comp
 L Device:R R?
 U 1 1 605F7570
-P 3700 6900
-F 0 "R?" H 3770 6946 50  0000 L CNN
-F 1 "20k" H 3770 6855 50  0000 L CNN
-F 2 "" V 3630 6900 50  0001 C CNN
-F 3 "~" H 3700 6900 50  0001 C CNN
-	1    3700 6900
+P 4650 6900
+F 0 "R?" H 4720 6946 50  0000 L CNN
+F 1 "20k" H 4720 6855 50  0000 L CNN
+F 2 "" V 4580 6900 50  0001 C CNN
+F 3 "~" H 4650 6900 50  0001 C CNN
+	1    4650 6900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3700 7100 3600 7100
+	4650 7100 4550 7100
 Wire Wire Line
-	2750 6700 3000 6700
-Text GLabel 3750 7450 2    50   Input ~ 0
+	3700 6700 3950 6700
+Text GLabel 4700 7450 2    50   Input ~ 0
 GND
 $Comp
 L Sensor_Proximity:CNY70 U?
 U 1 1 605F7579
-P 3300 7200
-F 0 "U?" H 3300 7517 50  0000 C CNN
-F 1 "CNY70" H 3300 7426 50  0000 C CNN
-F 2 "OptoDevice:Vishay_CNY70" H 3300 7000 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/83751/cny70.pdf" H 3300 7300 50  0001 C CNN
-	1    3300 7200
+P 4250 7200
+F 0 "U?" H 4250 7517 50  0000 C CNN
+F 1 "CNY70" H 4250 7426 50  0000 C CNN
+F 2 "OptoDevice:Vishay_CNY70" H 4250 7000 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/83751/cny70.pdf" H 4250 7300 50  0001 C CNN
+	1    4250 7200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3000 7300 3000 7450
+	3950 7300 3950 7450
 Wire Wire Line
-	3000 7450 3600 7450
+	3950 7450 4550 7450
 Wire Wire Line
-	3600 7300 3600 7450
-Connection ~ 3600 7450
+	4550 7300 4550 7450
+Connection ~ 4550 7450
 Wire Wire Line
-	3600 7450 3750 7450
+	4550 7450 4700 7450
 $Comp
 L Device:R R?
 U 1 1 605F7584
-P 3000 6900
-F 0 "R?" V 2793 6900 50  0000 C CNN
-F 1 "200R" V 2884 6900 50  0000 C CNN
-F 2 "" V 2930 6900 50  0001 C CNN
-F 3 "~" H 3000 6900 50  0001 C CNN
-	1    3000 6900
+P 3950 6900
+F 0 "R?" V 3743 6900 50  0000 C CNN
+F 1 "200R" V 3834 6900 50  0000 C CNN
+F 2 "" V 3880 6900 50  0001 C CNN
+F 3 "~" H 3950 6900 50  0001 C CNN
+	1    3950 6900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3000 7100 3000 7050
+	3950 7100 3950 7050
 Wire Wire Line
-	3700 7100 3700 7050
+	4650 7100 4650 7050
 Wire Wire Line
-	3000 6750 3000 6700
+	3950 6750 3950 6700
 Wire Wire Line
-	3000 6700 3700 6700
+	3950 6700 4650 6700
 Wire Wire Line
-	3700 6700 3700 6750
-Connection ~ 3000 6700
-Text GLabel 3900 6700 2    50   Input ~ 0
+	4650 6700 4650 6750
+Connection ~ 3950 6700
+Text GLabel 4850 6700 2    50   Input ~ 0
 CB_out2
 Wire Wire Line
-	3700 6700 3900 6700
-Connection ~ 3700 6700
-Text GLabel 4600 6700 0    50   Input ~ 0
-+5.0V
-$Comp
-L Device:R R?
-U 1 1 605FDE07
-P 5550 6900
-F 0 "R?" H 5620 6946 50  0000 L CNN
-F 1 "20k" H 5620 6855 50  0000 L CNN
-F 2 "" V 5480 6900 50  0001 C CNN
-F 3 "~" H 5550 6900 50  0001 C CNN
-	1    5550 6900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5550 7100 5450 7100
-Wire Wire Line
-	4600 6700 4850 6700
-Text GLabel 5600 7450 2    50   Input ~ 0
-GND
-$Comp
-L Sensor_Proximity:CNY70 U?
-U 1 1 605FDE10
-P 5150 7200
-F 0 "U?" H 5150 7517 50  0000 C CNN
-F 1 "CNY70" H 5150 7426 50  0000 C CNN
-F 2 "OptoDevice:Vishay_CNY70" H 5150 7000 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/83751/cny70.pdf" H 5150 7300 50  0001 C CNN
-	1    5150 7200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4850 7300 4850 7450
-Wire Wire Line
-	4850 7450 5450 7450
-Wire Wire Line
-	5450 7300 5450 7450
-Connection ~ 5450 7450
-Wire Wire Line
-	5450 7450 5600 7450
-$Comp
-L Device:R R?
-U 1 1 605FDE1B
-P 4850 6900
-F 0 "R?" V 4643 6900 50  0000 C CNN
-F 1 "200R" V 4734 6900 50  0000 C CNN
-F 2 "" V 4780 6900 50  0001 C CNN
-F 3 "~" H 4850 6900 50  0001 C CNN
-	1    4850 6900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4850 7100 4850 7050
-Wire Wire Line
-	5550 7100 5550 7050
-Wire Wire Line
-	4850 6750 4850 6700
-Wire Wire Line
-	4850 6700 5550 6700
-Wire Wire Line
-	5550 6700 5550 6750
-Connection ~ 4850 6700
-Text GLabel 5750 6700 2    50   Input ~ 0
-CB_out3
-Wire Wire Line
-	5550 6700 5750 6700
-Connection ~ 5550 6700
+	4650 6700 4850 6700
+Connection ~ 4650 6700
 Wire Notes Line
 	550  6300 6150 6300
 Wire Notes Line
@@ -1103,49 +954,107 @@ Text GLabel 6500 2650 0    50   Input ~ 0
 CO_out2
 Text GLabel 6500 2550 0    50   Input ~ 0
 CO_enb2
-Text GLabel 6500 2850 0    50   Input ~ 0
-CO_out3
-Text GLabel 6500 2750 0    50   Input ~ 0
-CO_enb3
 Text GLabel 6400 2150 0    50   Input ~ 0
 BT_RX
 Text GLabel 6400 2250 0    50   Input ~ 0
 BT_TX
-Text GLabel 6750 2950 0    50   Input ~ 0
+Text GLabel 6750 2750 0    50   Input ~ 0
 OUTA_EnkoderL
-Text GLabel 6750 3050 0    50   Input ~ 0
+Text GLabel 6750 2850 0    50   Input ~ 0
 OUTB_EnkoderL
-Text GLabel 6350 3350 0    50   Input ~ 0
+Text GLabel 6350 3150 0    50   Input ~ 0
 L_IN1
-Text GLabel 6350 3250 0    50   Input ~ 0
+Text GLabel 6350 3050 0    50   Input ~ 0
 L_IN2
-Text GLabel 6400 3150 0    50   Input ~ 0
+Text GLabel 6400 2950 0    50   Input ~ 0
 L_PWM
-Text GLabel 6350 3850 0    50   Input ~ 0
+Text GLabel 6350 3650 0    50   Input ~ 0
 R_IN1
-Text GLabel 6350 3750 0    50   Input ~ 0
+Text GLabel 6350 3550 0    50   Input ~ 0
 R_IN2
-Text GLabel 6400 3650 0    50   Input ~ 0
+Text GLabel 6400 3450 0    50   Input ~ 0
 R_PWM
-Text GLabel 6700 3450 0    50   Input ~ 0
+Text GLabel 6700 3250 0    50   Input ~ 0
 OUTA_EnkoderR
-Text GLabel 6700 3550 0    50   Input ~ 0
+Text GLabel 6700 3350 0    50   Input ~ 0
 OUTB_EnkoderR
-Text GLabel 6450 3950 0    50   Input ~ 0
+Text GLabel 6450 3750 0    50   Input ~ 0
 CB_out1
-Text GLabel 6450 4050 0    50   Input ~ 0
+Text GLabel 6450 3850 0    50   Input ~ 0
 CB_out2
-Text GLabel 6450 4150 0    50   Input ~ 0
-CB_out3
+Connection ~ 2150 7450
+Wire Wire Line
+	2150 7450 2300 7450
+Wire Wire Line
+	1550 7450 2150 7450
 $Comp
 L Device:R_POT RV?
 U 1 1 60628E41
-P 2300 7100
-F 0 "RV?" H 2231 7146 50  0000 R CNN
-F 1 "R_POT" H 2231 7055 50  0000 R CNN
-F 2 "" H 2300 7100 50  0001 C CNN
-F 3 "~" H 2300 7100 50  0001 C CNN
-	1    2300 7100
+P 2700 7100
+F 0 "RV?" H 2631 7146 50  0000 R CNN
+F 1 "R_POT" H 2631 7055 50  0000 R CNN
+F 2 "" H 2700 7100 50  0001 C CNN
+F 3 "~" H 2700 7100 50  0001 C CNN
+	1    2700 7100
 	1    0    0    -1  
 $EndComp
+Connection ~ 2250 6700
+Wire Wire Line
+	2250 6700 2450 6700
+Text GLabel 2450 6700 2    50   Input ~ 0
+CB_out1
+Connection ~ 1550 6700
+Wire Wire Line
+	2250 6700 2250 6750
+Wire Wire Line
+	1550 6700 2250 6700
+Wire Wire Line
+	1550 6750 1550 6700
+Wire Wire Line
+	2250 7100 2250 7050
+Wire Wire Line
+	1550 7100 1550 7050
+$Comp
+L Device:R R?
+U 1 1 604BB1C2
+P 1550 6900
+F 0 "R?" V 1343 6900 50  0000 C CNN
+F 1 "200R" V 1434 6900 50  0000 C CNN
+F 2 "" V 1480 6900 50  0001 C CNN
+F 3 "~" H 1550 6900 50  0001 C CNN
+	1    1550 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 7300 2150 7450
+Wire Wire Line
+	1550 7300 1550 7450
+$Comp
+L Sensor_Proximity:CNY70 U?
+U 1 1 604A7DBF
+P 1850 7200
+F 0 "U?" H 1850 7517 50  0000 C CNN
+F 1 "CNY70" H 1850 7426 50  0000 C CNN
+F 2 "OptoDevice:Vishay_CNY70" H 1850 7000 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/83751/cny70.pdf" H 1850 7300 50  0001 C CNN
+	1    1850 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 6700 1550 6700
+Wire Wire Line
+	2250 7100 2150 7100
+$Comp
+L Device:R R?
+U 1 1 604BBF71
+P 2250 6900
+F 0 "R?" H 2320 6946 50  0000 L CNN
+F 1 "20k" H 2320 6855 50  0000 L CNN
+F 2 "" V 2180 6900 50  0001 C CNN
+F 3 "~" H 2250 6900 50  0001 C CNN
+	1    2250 6900
+	1    0    0    -1  
+$EndComp
+Text GLabel 1300 6700 0    50   Input ~ 0
++5.0V
 $EndSCHEMATC
