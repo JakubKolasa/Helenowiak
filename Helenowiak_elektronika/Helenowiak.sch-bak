@@ -572,7 +572,7 @@ Text GLabel 2250 2500 0    50   Input ~ 0
 CO_out1
 Text GLabel 4100 2500 0    50   Input ~ 0
 CO_out2
-Text GLabel 3150 3050 0    50   Output ~ 0
+Text GLabel 3150 3050 0    50   Input ~ 0
 CO_out3
 Text GLabel 2250 2400 0    50   Input ~ 0
 CO_enb1
@@ -780,12 +780,12 @@ Wire Wire Line
 $Comp
 L MCU_ST_STM32F0:STM32F051C8Tx U?
 U 1 1 606F542E
-P 8550 3350
-F 0 "U?" H 8550 1661 50  0000 C CNN
-F 1 "STM32F051C8Tx" H 8550 1570 50  0000 C CNN
-F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 8050 1850 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00039193.pdf" H 8550 3350 50  0001 C CNN
-	1    8550 3350
+P 8250 3200
+F 0 "U?" H 8250 1511 50  0000 C CNN
+F 1 "STM32F051C8Tx" H 8250 1420 50  0000 C CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 7750 1700 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00039193.pdf" H 8250 3200 50  0001 C CNN
+	1    8250 3200
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
@@ -898,72 +898,68 @@ Wire Wire Line
 Connection ~ 6050 1050
 Wire Wire Line
 	7750 1050 8150 1050
-Wire Wire Line
-	8150 1050 8150 1450
 Connection ~ 7750 1050
-Text GLabel 10600 1050 2    50   Input ~ 0
+Text GLabel 9900 1050 2    50   Input ~ 0
 +3.3V
 $Comp
 L Device:L L?
 U 1 1 607BF2E6
-P 10300 1050
-F 0 "L?" V 10490 1050 50  0000 C CNN
-F 1 "27n" V 10399 1050 50  0000 C CNN
-F 2 "" H 10300 1050 50  0001 C CNN
-F 3 "~" H 10300 1050 50  0001 C CNN
-	1    10300 1050
+P 9600 1050
+F 0 "L?" V 9790 1050 50  0000 C CNN
+F 1 "27n" V 9699 1050 50  0000 C CNN
+F 2 "" H 9600 1050 50  0001 C CNN
+F 3 "~" H 9600 1050 50  0001 C CNN
+	1    9600 1050
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 607CCE11
-P 9450 1200
-F 0 "C?" H 9565 1246 50  0000 L CNN
-F 1 "100n" H 9565 1155 50  0000 L CNN
-F 2 "" H 9488 1050 50  0001 C CNN
-F 3 "~" H 9450 1200 50  0001 C CNN
-	1    9450 1200
+P 8750 1200
+F 0 "C?" H 8865 1246 50  0000 L CNN
+F 1 "100n" H 8865 1155 50  0000 L CNN
+F 2 "" H 8788 1050 50  0001 C CNN
+F 3 "~" H 8750 1200 50  0001 C CNN
+	1    8750 1200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 607D8702
-P 9900 1200
-F 0 "C?" H 10015 1246 50  0000 L CNN
-F 1 "1u" H 10015 1155 50  0000 L CNN
-F 2 "" H 9938 1050 50  0001 C CNN
-F 3 "~" H 9900 1200 50  0001 C CNN
-	1    9900 1200
+P 9200 1200
+F 0 "C?" H 9315 1246 50  0000 L CNN
+F 1 "1u" H 9315 1155 50  0000 L CNN
+F 2 "" H 9238 1050 50  0001 C CNN
+F 3 "~" H 9200 1200 50  0001 C CNN
+	1    9200 1200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10150 1050 9900 1050
-Connection ~ 9900 1050
+	9450 1050 9200 1050
+Connection ~ 9200 1050
 Wire Wire Line
-	10450 1050 10600 1050
+	9750 1050 9900 1050
 Wire Wire Line
-	9900 1350 9450 1350
+	9200 1350 8750 1350
 $Comp
 L power:GND #PWR?
 U 1 1 607FB9C7
-P 9900 1450
-F 0 "#PWR?" H 9900 1200 50  0001 C CNN
-F 1 "GND" H 9905 1277 50  0000 C CNN
-F 2 "" H 9900 1450 50  0001 C CNN
-F 3 "" H 9900 1450 50  0001 C CNN
-	1    9900 1450
+P 9200 1450
+F 0 "#PWR?" H 9200 1200 50  0001 C CNN
+F 1 "GND" H 9205 1277 50  0000 C CNN
+F 2 "" H 9200 1450 50  0001 C CNN
+F 3 "" H 9200 1450 50  0001 C CNN
+	1    9200 1450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9900 1350 9900 1450
-Connection ~ 9900 1350
+	9200 1350 9200 1450
+Connection ~ 9200 1350
 Wire Wire Line
-	9450 1050 9900 1050
+	8750 1050 9200 1050
 Wire Wire Line
-	9450 1050 9150 1050
-Wire Wire Line
-	9150 1050 9150 1450
-Connection ~ 9450 1050
+	8750 1050 8450 1050
+Connection ~ 8750 1050
 $Comp
 L Switch:SW_DPST_x2 SW?
 U 1 1 60844279
@@ -1062,4 +1058,83 @@ Text GLabel 2950 3800 0    50   Input ~ 0
 +5.0V
 Text GLabel 2900 5100 0    50   Input ~ 0
 +5.0V
+Text Notes 5700 4900 0    50   ~ 10
+Uruchamianie roznych trybow testowych / taktyk
+Wire Wire Line
+	8150 1050 8150 1500
+Wire Wire Line
+	8150 1500 8250 1500
+Wire Wire Line
+	8250 1500 8250 1600
+Connection ~ 8150 1500
+Wire Wire Line
+	8150 1500 8150 1600
+Wire Wire Line
+	8250 1500 8350 1500
+Wire Wire Line
+	8350 1500 8350 1600
+Connection ~ 8250 1500
+Wire Wire Line
+	8450 1600 8450 1050
+Text Notes 7600 6000 0    50   ~ 0
+Wszystkie ,,puste" piny zostana odprowadzone na bok do konektorow zenskich zeby \new podpiac tam jakies diody albo dodatkowe czujniki
+Text GLabel 8650 5150 2    50   Input ~ 0
+GND
+Wire Wire Line
+	8150 4800 8150 4850
+Wire Wire Line
+	8150 4850 8250 4850
+Wire Wire Line
+	8250 4850 8250 4800
+Wire Wire Line
+	8250 4850 8350 4850
+Wire Wire Line
+	8350 4850 8350 4800
+Connection ~ 8250 4850
+Wire Wire Line
+	8250 4850 8250 5150
+Wire Wire Line
+	8250 5150 8650 5150
+Text GLabel 6500 2450 0    50   Input ~ 0
+CO_out1
+Text GLabel 6500 2350 0    50   Input ~ 0
+CO_enb1
+Text GLabel 6500 2650 0    50   Input ~ 0
+CO_out2
+Text GLabel 6500 2550 0    50   Input ~ 0
+CO_enb2
+Text GLabel 6500 2850 0    50   Input ~ 0
+CO_out3
+Text GLabel 6500 2750 0    50   Input ~ 0
+CO_enb3
+Text GLabel 6400 2150 0    50   Input ~ 0
+BT_RX
+Text GLabel 6400 2250 0    50   Input ~ 0
+BT_TX
+Text GLabel 6750 2950 0    50   Input ~ 0
+OUTA_EnkoderL
+Text GLabel 6750 3050 0    50   Input ~ 0
+OUTB_EnkoderL
+Text GLabel 6350 3350 0    50   Input ~ 0
+L_IN1
+Text GLabel 6350 3250 0    50   Input ~ 0
+L_IN2
+Text GLabel 6400 3150 0    50   Input ~ 0
+L_PWM
+Text GLabel 6350 3850 0    50   Input ~ 0
+R_IN1
+Text GLabel 6350 3750 0    50   Input ~ 0
+R_IN2
+Text GLabel 6400 3650 0    50   Input ~ 0
+R_PWM
+Text GLabel 6700 3450 0    50   Input ~ 0
+OUTA_EnkoderR
+Text GLabel 6700 3550 0    50   Input ~ 0
+OUTB_EnkoderR
+Text GLabel 6450 3950 0    50   Input ~ 0
+CB_out1
+Text GLabel 6450 4050 0    50   Input ~ 0
+CB_out2
+Text GLabel 6450 4150 0    50   Input ~ 0
+CB_out3
 $EndSCHEMATC
