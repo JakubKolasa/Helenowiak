@@ -19,6 +19,9 @@ OUTB_EnkoderR
 CB_out1	-wejscie, sygnał logiczny
 CB_out2
 
+
+
+
 czy zasilanie enkoderów moze byc prosto z zasilania?
 czy kondensatory są git?
 mostek zasilać lepiej 5v czy 3.3v?
