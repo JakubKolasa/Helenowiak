@@ -17,7 +17,8 @@ OUTB_EnkoderR 			  = 					     (y)
 CB_out1				  = ADC IN (y)
 CB_out2				  = ADC IN (y)
 BaterryV			  = ADC IN (y)
-
+Button1				  = gpio input (y)
+Button2			    	  = gpio input (y)
 
 
 
