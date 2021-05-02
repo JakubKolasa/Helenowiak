@@ -20,7 +20,7 @@ L Connector:Conn_01x02_Female J1
 U 1 1 604D126C
 P 650 1500
 F 0 "J1" H 678 1476 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 678 1385 50  0000 L CNN
+F 1 "Vin" H 678 1385 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 650 1500 50  0001 C CNN
 F 3 "~" H 650 1500 50  0001 C CNN
 	1    650  1500
@@ -46,17 +46,6 @@ F 1 "GND" H 1605 1977 50  0000 C CNN
 F 2 "" H 1600 2150 50  0001 C CNN
 F 3 "" H 1600 2150 50  0001 C CNN
 	1    1600 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Regulator_Linear:LD1117S33TR_SOT223 U2
-U 1 1 60505D10
-P 4350 1050
-F 0 "U2" H 4350 1292 50  0000 C CNN
-F 1 "LD1117S33TR_SOT223" H 4350 1201 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 4350 1250 50  0001 C CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 4450 800 50  0001 C CNN
-	1    4350 1050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -93,14 +82,14 @@ F 3 "" H 1000 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L HelenowiakLib:CzujnikOdleglosci_Polulu2578 CO1
+L Connector:Conn_01x04_Female CO1
 U 1 1 6055C9E9
-P 2700 2900
-F 0 "CO1" H 2878 2951 50  0000 L CNN
-F 1 "Czujnik_Polulu2578" H 2878 2860 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 2450 2850 50  0001 C CNN
-F 3 "" H 2450 2850 50  0001 C CNN
-	1    2700 2900
+P 2600 2850
+F 0 "CO1" H 2778 2901 50  0000 L CNN
+F 1 "Czujnik_Polulu2578" H 2778 2810 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 2350 2800 50  0001 C CNN
+F 3 "" H 2350 2800 50  0001 C CNN
+	1    2600 2850
 	1    0    0    -1  
 $EndComp
 Text Notes 1900 2550 0    50   ~ 10
@@ -142,17 +131,6 @@ $EndComp
 NoConn ~ 900  2750
 NoConn ~ 900  3250
 $Comp
-L Regulator_Linear:LM1117-5.0 U1
-U 1 1 604A7886
-P 2800 1700
-F 0 "U1" H 2800 1942 50  0000 C CNN
-F 1 "LM1117-5.0" H 2800 1851 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 2800 1700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 2800 1700 50  0001 C CNN
-	1    2800 1700
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C10
 U 1 1 60533C27
 P 1850 1850
@@ -172,14 +150,14 @@ Wire Notes Line
 Text Notes 600  2550 0    50   ~ 10
 Bluetooth
 $Comp
-L HelenowiakLib:CzujnikOdleglosci_Polulu2578 CO2
+L Connector:Conn_01x04_Female CO2
 U 1 1 605979D7
-P 4550 2900
-F 0 "CO2" H 4728 2951 50  0000 L CNN
-F 1 "Czujnik_Polulu2578" H 4728 2860 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 4300 2850 50  0001 C CNN
-F 3 "" H 4300 2850 50  0001 C CNN
-	1    4550 2900
+P 4450 2850
+F 0 "CO2" H 4628 2901 50  0000 L CNN
+F 1 "Czujnik_Polulu2578" H 4628 2810 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 4200 2800 50  0001 C CNN
+F 3 "" H 4200 2800 50  0001 C CNN
+	1    4450 2850
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
@@ -255,11 +233,8 @@ Wire Wire Line
 Wire Wire Line
 	4650 6900 4650 6950
 Connection ~ 3950 6900
-Text GLabel 4850 6900 2    50   Output ~ 0
+Text GLabel 4750 7300 2    50   Output ~ 0
 CB_out2
-Wire Wire Line
-	4650 6900 4850 6900
-Connection ~ 4650 6900
 Connection ~ 2250 1700
 Wire Wire Line
 	2250 1700 2500 1700
@@ -486,10 +461,7 @@ Wire Wire Line
 	2150 7650 2300 7650
 Wire Wire Line
 	1550 7650 2150 7650
-Connection ~ 2250 6900
-Wire Wire Line
-	2250 6900 2450 6900
-Text GLabel 2450 6900 2    50   Output ~ 0
+Text GLabel 2350 7300 2    50   Output ~ 0
 CB_out1
 Connection ~ 1550 6900
 Wire Wire Line
@@ -760,17 +732,6 @@ $EndComp
 Wire Wire Line
 	9250 5100 9250 5300
 $Comp
-L Switch:SW_MEC_5G SW2
-U 1 1 60BC18A3
-P 6150 1900
-F 0 "SW2" H 6150 2185 50  0000 C CNN
-F 1 "Reset_button" H 6150 2094 50  0000 C CNN
-F 2 "footprints_helenowiak:button_mono" H 6150 2100 50  0001 C CNN
-F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 6150 2100 50  0001 C CNN
-	1    6150 1900
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C15
 U 1 1 60BD1750
 P 6450 2200
@@ -857,8 +818,6 @@ Wire Wire Line
 	1250 1400 1600 1400
 Wire Wire Line
 	1600 1400 1600 1700
-Text GLabel 2250 1350 0    50   Output ~ 0
-Battery_V
 Text Notes 600  750  0    50   ~ 10
 Zasilanie, zabezpieczenie przed odwrotna polaryzacja, pomiar napiecia na baterii\n\n
 Wire Wire Line
@@ -1032,7 +991,7 @@ Wire Wire Line
 	6600 2200 6600 1900
 Connection ~ 6600 1900
 $Comp
-L Switch:SW_MEC_5G SW3
+L Switch:SW_Push SW3
 U 1 1 608F1124
 P 6150 3000
 F 0 "SW3" H 6150 3285 50  0000 C CNN
@@ -1097,7 +1056,7 @@ Wire Wire Line
 	6600 3300 6600 3000
 Connection ~ 6600 3000
 $Comp
-L Switch:SW_MEC_5G SW4
+L Switch:SW_Push SW4
 U 1 1 608FA127
 P 6150 4050
 F 0 "SW4" H 6150 4335 50  0000 C CNN
@@ -1358,12 +1317,12 @@ NoConn ~ 9950 1750
 $Comp
 L power:+3.3V #PWR0114
 U 1 1 60BBCC07
-P 10850 950
-F 0 "#PWR0114" H 10850 800 50  0001 C CNN
-F 1 "+3.3V" H 10865 1123 50  0000 C CNN
-F 2 "" H 10850 950 50  0001 C CNN
-F 3 "" H 10850 950 50  0001 C CNN
-	1    10850 950 
+P 10850 900
+F 0 "#PWR0114" H 10850 750 50  0001 C CNN
+F 1 "+3.3V" H 10865 1073 50  0000 C CNN
+F 2 "" H 10850 900 50  0001 C CNN
+F 3 "" H 10850 900 50  0001 C CNN
+	1    10850 900 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1781,10 +1740,8 @@ F 3 "~" H 1050 1300 50  0001 C CNN
 	1    1050 1300
 	1    0    0    -1  
 $EndComp
-Connection ~ 1250 1400
 Wire Wire Line
 	850  1300 850  1400
-NoConn ~ 1250 1200
 Wire Wire Line
 	3100 1700 3200 1700
 Wire Wire Line
@@ -1939,4 +1896,49 @@ Connection ~ 3450 1050
 Wire Wire Line
 	3250 1000 3100 1000
 Connection ~ 3100 1000
+Wire Wire Line
+	10850 900  10850 950 
+$Comp
+L Switch:SW_Push SW2
+U 1 1 60BC18A3
+P 6150 1900
+F 0 "SW2" H 6150 2185 50  0000 C CNN
+F 1 "Reset_button" H 6150 2094 50  0000 C CNN
+F 2 "footprints_helenowiak:button_mono" H 6150 2100 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 6150 2100 50  0001 C CNN
+	1    6150 1900
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1250 1200
+Text GLabel 2250 1350 0    50   Output ~ 0
+Battery_V
+$Comp
+L Regulator_Linear:LM1117-5.0 U1
+U 1 1 604A7886
+P 2800 1700
+F 0 "U1" H 2800 1942 50  0000 C CNN
+F 1 "LM1117-5.0" H 2800 1851 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 2800 1700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 2800 1700 50  0001 C CNN
+	1    2800 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LD1117S33TR_SOT223 U2
+U 1 1 60505D10
+P 4350 1050
+F 0 "U2" H 4350 1292 50  0000 C CNN
+F 1 "LD1117S33TR_SOT223" H 4350 1201 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 4350 1250 50  0001 C CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 4450 800 50  0001 C CNN
+	1    4350 1050
+	1    0    0    -1  
+$EndComp
+Connection ~ 1250 1400
+Wire Wire Line
+	2250 7300 2350 7300
+Connection ~ 2250 7300
+Wire Wire Line
+	4650 7300 4750 7300
+Connection ~ 4650 7300
 $EndSCHEMATC
