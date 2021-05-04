@@ -1913,5 +1913,5 @@ Button1
 Text GLabel 8550 3850 0    50   Output ~ 0
 R_MODE
 Wire Wire Line
-	1400 5850 1350 5850
+	1350 5850 1500 5850
 $EndSCHEMATC

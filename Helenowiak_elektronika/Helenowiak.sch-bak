@@ -446,8 +446,6 @@ Text GLabel 9950 3350 2    50   Input ~ 0
 PWM_R_IN1
 Text GLabel 9950 3450 2    50   Input ~ 0
 PWM_R_IN2
-Text GLabel 8550 3850 0    50   Output ~ 0
-R_MODE
 Text GLabel 9950 3150 2    50   Input ~ 0
 OUTA_EnkoderR
 Text GLabel 9950 3650 2    50   Input ~ 0
@@ -890,10 +888,6 @@ Text GLabel 6600 3300 2    50   Input ~ 0
 Button1
 Text GLabel 6600 4350 2    50   Input ~ 0
 Button2
-Text GLabel 8550 3950 0    50   Input ~ 0
-Button1
-Text GLabel 8550 4050 0    50   Input ~ 0
-Button2
 Text GLabel 8550 3350 0    50   Output ~ 0
 LED1
 Text GLabel 8550 3450 0    50   Output ~ 0
@@ -1163,33 +1157,6 @@ F 3 "~" H 6200 5800 50  0001 C CNN
 $EndComp
 Text GLabel 8550 3650 0    50   Output ~ 0
 LED4
-$Comp
-L Connector:Conn_01x08_Female J5
-U 1 1 609E65DA
-P 7650 4550
-F 0 "J5" H 7542 3925 50  0000 C CNN
-F 1 "freePins" H 7542 4016 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 7650 4550 50  0001 C CNN
-F 3 "~" H 7650 4550 50  0001 C CNN
-	1    7650 4550
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	8550 4150 7850 4150
-Wire Wire Line
-	8550 4250 7850 4250
-Wire Wire Line
-	7850 4350 8550 4350
-Wire Wire Line
-	8550 4450 7850 4450
-Wire Wire Line
-	7850 4550 8550 4550
-Wire Wire Line
-	8550 4650 7850 4650
-Wire Wire Line
-	7850 4750 8550 4750
-Wire Wire Line
-	8550 4850 7850 4850
 NoConn ~ 9950 1950
 NoConn ~ 9950 2050
 NoConn ~ 8550 2950
@@ -1939,6 +1906,12 @@ Connection ~ 2250 7300
 Wire Wire Line
 	4650 7300 4750 7300
 Connection ~ 4650 7300
+Text GLabel 8550 4050 0    50   Input ~ 0
+Button2
+Text GLabel 8550 3950 0    50   Input ~ 0
+Button1
+Text GLabel 8550 3850 0    50   Output ~ 0
+R_MODE
 Wire Wire Line
-	1350 5850 1500 5850
+	1400 5850 1350 5850
 $EndSCHEMATC
